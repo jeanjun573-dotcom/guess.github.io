@@ -1,5 +1,4 @@
 💕
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -128,15 +127,8 @@ document.body.innerHTML = `
 `;
 });
 for (let i = 0; i < 30; i++) spawnHeart();
-function spawnHeart() {
+function spawnHeart() 
 const heart = document.createElement("div");
 heart.className = "heart";
 heart.textContent = " ";
-heart.style.left = Math.random() * 100 + "vw";
-heart.style.fontSize = Math.random() * 20 + 15 + "px";
-document.body.appendChild(heart);
-setTimeout(() => heart.remove(), 5000);
-}
-</script>
-</body>
-</html>
+heart.style.left = Math.random() *
